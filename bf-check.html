@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>One Important Question 👀❤️</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Georgia, serif;
+            background: linear-gradient(135deg, #ffe4ec, #fff5f8, #fce1f0);
+            overflow: hidden;
+        }
+
+        .question-card {
+            width: 90%;
+            max-width: 550px;
+            padding: 45px 30px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 30px;
+            box-shadow: 0 15px 40px rgba(120, 50, 80, 0.15);
+        }
+
+        .big-heart {
+            font-size: 65px;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.15);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+
+        }
+
+        h1 {
+            color: #9d416b;
+            font-size: 38px;
+            margin: 15px 0;
+        }
+
+        h2 {
+            color: #6f3b52;
+            font-size: 23px;
+        }
+
+        p {
+            color: #684554;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .question {
+            font-size: 23px;
+            font-weight: bold;
+            color: #a13f69;
+            margin: 25px 0;
+        }
+
+        .answer-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        button {
+            border: none;
+            padding: 14px 25px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .yes-button {
+            background: #d96b9b;
+            color: white;
+        }
+
+        .no-button {
+            background: #f1d5df;
+            color: #713f52;
+        }
+
+        button:hover {
+            transform: scale(1.08);
+        }
+
+        #response {
+            margin-top: 25px;
+            font-size: 19px;
+            font-weight: bold;
+            color: #9d416b;
+        }
+
+        #continueButton {
+            display: none;
+            margin-top: 15px;
+            background: #9d416b;
+            color: white;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <div class="question-card">
+
+        <div class="big-heart">
+            💗
+        </div>
+
+        <h1>Wait... 👀</h1>
+
+        <h2>One very important question...</h2>
+
+        <p>
+            After seeing all this... 🥹
+        </p>
+
+        <p class="question">
+            Will you continue being my boyfriend? 😚❤️
+        </p>
+
+
+        <div class="answer-buttons">
+
+            <button class="yes-button" onclick="yesAnswer()">
+                YES, LOVE YOU ❤️
+            </button>
+
+            <button class="no-button" onclick="noAnswer()">
+                NO 🥺
+            </button>
+
+        </div>
+
+
+        <p id="response"></p>
+
+
+        <button
+    id="continueButton"
+    onclick="goToReward()"
+    style="display: none;">
+    Continue 🫶
+</button>
+
+    </div>
+
+
+    <script>
+
+        function yesAnswer() {
+
+            document.getElementById("response").innerHTML =
+                "YAYYYYY 😭❤️ I knew you'd choose me! You're stuck with me forever now 😚🫂";
+
+            document.getElementById("continueButton").style.display =
+                "inline-block";
+        }
+
+
+        function noAnswer() {
+
+            document.getElementById("response").innerHTML =
+                "Nope nope 😭😂you don't have other option 👀❤️";
+
+        }
+
+
+        function goToReward() {
+
+    window.location.href = "reward.html";
+
+}
+
+
+    </script>
+
+</body>
+
+</html>
